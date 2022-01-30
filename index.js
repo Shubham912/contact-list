@@ -10,17 +10,17 @@ app.use(express.urlencoded());
 app.use(express.static("assets"));
 
 // middleware1;
-app.use(function (req, res, next) {
-  req.myName = "Arpan";
-  console.log("middleware 1 called");
-  next();
-});
-// middleware2;
-app.use(function (req, res, next) {
-  console.log("My Name from MW2", req.myName);
-  console.log("middleware 2 called");
-  next();
-});
+// app.use(function (req, res, next) {
+//   req.myName = "Arpan";
+//   console.log("middleware 1 called");
+//   next();
+// });
+// // middleware2;
+// app.use(function (req, res, next) {
+//   console.log("My Name from MW2", req.myName);
+//   console.log("middleware 2 called");
+//   next();
+// });
 
 var contactList = [
   {
